@@ -1,0 +1,984 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+GMAO_Wassim_Skander
+</name>
+</assembly>
+<members>
+<member name="T:GMAO_Wassim_Skander.DataSet_Intervention.Ligne_Interv_PrevDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.Liste_InterventionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.Liste_PanneDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.ObservationsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.RapportDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.Article_InterventionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.vue_preventiveDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.InterventionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.VUE_InterventionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.Ligne_Interv_PrevRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.Liste_InterventionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.Liste_PanneRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.ObservationsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.RapportRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.Article_InterventionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.vue_preventiveRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.InterventionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.VUE_InterventionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.Ligne_Interv_PrevRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.Liste_InterventionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.Liste_PanneRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.ObservationsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.RapportRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.Article_InterventionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.vue_preventiveRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.InterventionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention.VUE_InterventionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Intervention">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.Ligne_Interv_PrevTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.Liste_InterventionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.Liste_PanneTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.ObservationsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.RapportTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.Article_InterventionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.vue_preventiveTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.InterventionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.VUE_InterventionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.TableAdapterManager.UpdateUpdatedRows(GMAO_Wassim_Skander.DataSet_Intervention,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.TableAdapterManager.UpdateInsertedRows(GMAO_Wassim_Skander.DataSet_Intervention,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.TableAdapterManager.UpdateDeletedRows(GMAO_Wassim_Skander.DataSet_Intervention,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.TableAdapterManager.UpdateAll(GMAO_Wassim_Skander.DataSet_Intervention)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_InterventionTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.ArticlesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Articles_CaracteristiquesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Articles_FamilleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Articles_LotDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_EntreeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_Entree_LigneDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_SortieDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_Sortie_LigneDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_TransfertDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_Transfert_LigneDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.CaracteristiquesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.DEPOTDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.InventaireDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Inventaire_LigneDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.ArticlesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Articles_CaracteristiquesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Articles_FamilleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Articles_LotRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_EntreeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_Entree_LigneRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_SortieRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_Sortie_LigneRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_TransfertRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_Transfert_LigneRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.CaracteristiquesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.DEPOTRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.InventaireRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Inventaire_LigneRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.ArticlesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Articles_CaracteristiquesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Articles_FamilleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Articles_LotRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_EntreeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_Entree_LigneRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_SortieRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_Sortie_LigneRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_TransfertRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Bon_Transfert_LigneRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.CaracteristiquesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.DEPOTRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.InventaireRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock.Inventaire_LigneRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Stock">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.ArticlesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.Articles_CaracteristiquesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.Articles_FamilleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.Articles_LotTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.Bon_EntreeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.Bon_Entree_LigneTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.Bon_SortieTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.Bon_Sortie_LigneTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.Bon_TransfertTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.Bon_Transfert_LigneTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.CaracteristiquesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.DEPOTTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.InventaireTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.Inventaire_LigneTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_StockTableAdapters.TableAdapterManager.UpdateUpdatedRows(GMAO_Wassim_Skander.DataSet_Stock,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_StockTableAdapters.TableAdapterManager.UpdateInsertedRows(GMAO_Wassim_Skander.DataSet_Stock,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_StockTableAdapters.TableAdapterManager.UpdateDeletedRows(GMAO_Wassim_Skander.DataSet_Stock,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_StockTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_StockTableAdapters.TableAdapterManager.UpdateAll(GMAO_Wassim_Skander.DataSet_Stock)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_StockTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet.PersonnelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet.Personnel1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet.PersonnelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet.Personnel1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet.PersonnelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet.Personnel1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSetTableAdapters.PersonnelTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSetTableAdapters.Personnel1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.GMAODataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(GMAO_Wassim_Skander.GMAODataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.GMAODataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(GMAO_Wassim_Skander.GMAODataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.GMAODataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(GMAO_Wassim_Skander.GMAODataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.GMAODataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.GMAODataSetTableAdapters.TableAdapterManager.UpdateAll(GMAO_Wassim_Skander.GMAODataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.FournisseurDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Bon_CommandeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Bon_Commande_LigneDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Bon_ReseptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Demande_AchatDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Demande_Achat_LigneDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Bon_Reseption_LigneDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.FournisseurRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Bon_CommandeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Bon_Commande_LigneRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Bon_ReseptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Demande_AchatRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Demande_Achat_LigneRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Bon_Reseption_LigneRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.FournisseurRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Bon_CommandeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Bon_Commande_LigneRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Bon_ReseptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Demande_AchatRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Demande_Achat_LigneRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur.Bon_Reseption_LigneRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Fournisseur">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_FournisseurTableAdapters.FournisseurTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_FournisseurTableAdapters.Bon_CommandeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_FournisseurTableAdapters.Bon_Commande_LigneTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_FournisseurTableAdapters.Bon_ReseptionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_FournisseurTableAdapters.Demande_AchatTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_FournisseurTableAdapters.Demande_Achat_LigneTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_FournisseurTableAdapters.Bon_Reseption_LigneTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_FournisseurTableAdapters.TableAdapterManager.UpdateUpdatedRows(GMAO_Wassim_Skander.DataSet_Fournisseur,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_FournisseurTableAdapters.TableAdapterManager.UpdateInsertedRows(GMAO_Wassim_Skander.DataSet_Fournisseur,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_FournisseurTableAdapters.TableAdapterManager.UpdateDeletedRows(GMAO_Wassim_Skander.DataSet_Fournisseur,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_FournisseurTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_FournisseurTableAdapters.TableAdapterManager.UpdateAll(GMAO_Wassim_Skander.DataSet_Fournisseur)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_FournisseurTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_FournisseurTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_FournisseurTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Machine.MachineDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Machine.Machine_Interv_PrevDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Machine.Type_FrequenceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Machine.MachineRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Machine.Machine_Interv_PrevRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Machine.Type_FrequenceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Machine.MachineRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Machine.Machine_Interv_PrevRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Machine.Type_FrequenceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_Machine">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_MachineTableAdapters.MachineTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_MachineTableAdapters.Machine_Interv_PrevTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_MachineTableAdapters.Type_FrequenceTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_MachineTableAdapters.TableAdapterManager.UpdateUpdatedRows(GMAO_Wassim_Skander.DataSet_Machine,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_MachineTableAdapters.TableAdapterManager.UpdateInsertedRows(GMAO_Wassim_Skander.DataSet_Machine,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_MachineTableAdapters.TableAdapterManager.UpdateDeletedRows(GMAO_Wassim_Skander.DataSet_Machine,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_MachineTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.DataSet_MachineTableAdapters.TableAdapterManager.UpdateAll(GMAO_Wassim_Skander.DataSet_Machine)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_MachineTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_MachineTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.DataSet_MachineTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUE.vue_preventiveDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUE.VUE_TOP10DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUE.VUE_TTR_MACHINEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUE.VUE_TTR_ALLDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUE.vue_preventiveRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUE.VUE_TOP10Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUE.VUE_TTR_MACHINERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUE.VUE_TTR_ALLRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUE.vue_preventiveRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUE.VUE_TOP10RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUE.VUE_TTR_MACHINERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUE.VUE_TTR_ALLRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUE">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUETableAdapters.vue_preventiveTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUETableAdapters.VUE_TOP10TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUETableAdapters.VUE_TTR_MACHINETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUETableAdapters.VUE_TTR_ALLTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.GMAODataSet_VUETableAdapters.TableAdapterManager.UpdateUpdatedRows(GMAO_Wassim_Skander.GMAODataSet_VUE,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.GMAODataSet_VUETableAdapters.TableAdapterManager.UpdateInsertedRows(GMAO_Wassim_Skander.GMAODataSet_VUE,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.GMAODataSet_VUETableAdapters.TableAdapterManager.UpdateDeletedRows(GMAO_Wassim_Skander.GMAODataSet_VUE,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.GMAODataSet_VUETableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:GMAO_Wassim_Skander.GMAODataSet_VUETableAdapters.TableAdapterManager.UpdateAll(GMAO_Wassim_Skander.GMAODataSet_VUE)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUETableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUETableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.GMAODataSet_VUETableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.Capture_d_écran_2023_03_29_232002">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.Capture_d_écran_2023_03_29_2320021">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_add_64">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_add_64__1_">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_analytics_30">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_apple_logo_100">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_apple_logo_150">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_apple_logo_50">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_cancel_64">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_cancel_64__1_">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_close_button_32">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_combo_chart_50">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_delete_32">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_design_65">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_design_65__1_">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_design_65__2_">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_design_65__3_">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_design_65__4_">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_edit_property_64">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_edit_property_64__1_">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_edit_property_64__2_">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_edit_property_64__3_">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_edit_property_64__4_">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_maximize_button_32">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_maximize_window">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_maximize_window_50">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_menu">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_menu_67">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_print_64">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:GMAO_Wassim_Skander.My.Resources.Resources.icons8_subtract_32">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:GMAO_Wassim_Skander.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+</members>
+</doc>

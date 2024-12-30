@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GMAODataSet_VUE" targetNamespace="http://tempuri.org/GMAODataSet_VUE.xsd" xmlns:mstns="http://tempuri.org/GMAODataSet_VUE.xsd" xmlns="http://tempuri.org/GMAODataSet_VUE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="GMAOConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="GMAOConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GMAO_Wassim_Skander.My.MySettings.GlobalReference.Default.GMAOConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vue_preventiveTableAdapter" GeneratorDataComponentClassName="vue_preventiveTableAdapter" Name="vue_preventive" UserDataComponentName="vue_preventiveTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GMAOConnectionString (MySettings)" DbObjectName="GMAO.dbo.vue_preventive" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT N_intervention, Duree, Description, Intervention, Observation, Validation, Code_Machine, Code_Interv, Date_DInterv, Type_Frequence, Freq, Type, Date_PInterv FROM dbo.vue_preventive</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="N_intervention" DataSetColumn="N_intervention" />
+              <Mapping SourceColumn="Duree" DataSetColumn="Duree" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Intervention" DataSetColumn="Intervention" />
+              <Mapping SourceColumn="Observation" DataSetColumn="Observation" />
+              <Mapping SourceColumn="Validation" DataSetColumn="Validation" />
+              <Mapping SourceColumn="Code_Machine" DataSetColumn="Code_Machine" />
+              <Mapping SourceColumn="Code_Interv" DataSetColumn="Code_Interv" />
+              <Mapping SourceColumn="Date_DInterv" DataSetColumn="Date_DInterv" />
+              <Mapping SourceColumn="Type_Frequence" DataSetColumn="Type_Frequence" />
+              <Mapping SourceColumn="Freq" DataSetColumn="Freq" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+              <Mapping SourceColumn="Date_PInterv" DataSetColumn="Date_PInterv" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VUE_TOP10TableAdapter" GeneratorDataComponentClassName="VUE_TOP10TableAdapter" Name="VUE_TOP10" UserDataComponentName="VUE_TOP10TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GMAOConnectionString (MySettings)" DbObjectName="GMAO.dbo.Intervention" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT TOP (10) COUNT(*) AS Expr1, Code_Machine
+FROM     Intervention
+WHERE  (Type = 'corrective') AND (Date_Interv BETWEEN @DAT1 AND @DAT2)
+GROUP BY Code_Machine
+ORDER BY Expr1 DESC, Code_Machine</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DAT1" ColumnName="Date_Interv" DataSourceName="GMAO.dbo.Intervention" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@DAT1" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Date_Interv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="DAT2" ColumnName="Date_Interv" DataSourceName="GMAO.dbo.Intervention" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@DAT2" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Date_Interv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="Code_Machine" DataSetColumn="Code_Machine" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VUE_TTR_MACHINETableAdapter" GeneratorDataComponentClassName="VUE_TTR_MACHINETableAdapter" Name="VUE_TTR_MACHINE" UserDataComponentName="VUE_TTR_MACHINETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GMAOConnectionString (MySettings)" DbObjectName="GMAO.dbo.Intervention" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Code_Machine, Date_Interv, TTR_M, TTR_D, Type
+FROM     Intervention
+WHERE  (Type = 'corrective') AND (Code_Machine = 'CRZ A') AND (Date_Interv BETWEEN @DAT1 AND @DAT2)
+ORDER BY Code_Machine, Date_Interv, TTR_M</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DAT1" ColumnName="Date_Interv" DataSourceName="GMAO.dbo.Intervention" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@DAT1" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Date_Interv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="DAT2" ColumnName="Date_Interv" DataSourceName="GMAO.dbo.Intervention" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@DAT2" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Date_Interv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Code_Machine" DataSetColumn="Code_Machine" />
+              <Mapping SourceColumn="TTR_M" DataSetColumn="TTR_M" />
+              <Mapping SourceColumn="TTR_D" DataSetColumn="TTR_D" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+              <Mapping SourceColumn="Date_Interv" DataSetColumn="Date_Interv" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VUE_TTR_ALLTableAdapter" GeneratorDataComponentClassName="VUE_TTR_ALLTableAdapter" Name="VUE_TTR_ALL" UserDataComponentName="VUE_TTR_ALLTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GMAOConnectionString (MySettings)" DbObjectName="GMAO.dbo.Intervention" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) AS NBR, Code_Machine, SUM(DT_M) / COUNT(*) AS MDT_M, SUM(UT_M) / COUNT(*) AS MUT_M, SUM(TTR_M) / COUNT(*) AS MTTR_M, SUM(TBF_M) / COUNT(*) AS MTBF_M, Type
+FROM     Intervention
+WHERE (Date_Interv BETWEEN @DAT1 AND @DAT2)
+GROUP BY Code_Machine, Type
+HAVING (Type = 'corrective')</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DAT1" ColumnName="Date_Interv" DataSourceName="GMAO.dbo.Intervention" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@DAT1" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Date_Interv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="DAT2" ColumnName="Date_Interv" DataSourceName="GMAO.dbo.Intervention" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@DAT2" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Date_Interv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NBR" DataSetColumn="NBR" />
+              <Mapping SourceColumn="Code_Machine" DataSetColumn="Code_Machine" />
+              <Mapping SourceColumn="MDT_M" DataSetColumn="MDT_M" />
+              <Mapping SourceColumn="MUT_M" DataSetColumn="MUT_M" />
+              <Mapping SourceColumn="MTTR_M" DataSetColumn="MTTR_M" />
+              <Mapping SourceColumn="MTBF_M" DataSetColumn="MTBF_M" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="GMAOConnectionString (MySettings)" DbObjectName="GMAO.dbo.Intervention" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill_DT" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData_DT" GeneratorSourceName="Fill_DT" GetMethodModifier="Public" GetMethodName="GetData_DT" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData_DT" UserSourceName="Fill_DT">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) AS NBR, Code_Machine, (SUM(DT_M) / 60) / COUNT(*) AS MDT_M, (SUM(UT_M) / 60) / COUNT(*) AS MUT_M, (SUM(TTR_M) / 60) / COUNT(*) AS MTTR_M, (SUM(TBF_M) / 60) / COUNT(*) AS MTBF_M, Type
+FROM     Intervention
+WHERE  (Date_Interv BETWEEN @DAT1 AND @DAT2)
+GROUP BY Code_Machine, Type
+HAVING (Type = 'corrective')
+ORDER BY SUM(DT_M) / COUNT(*) DESC</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DAT1" ColumnName="Date_Interv" DataSourceName="GMAO.dbo.Intervention" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@DAT1" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Date_Interv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="DAT2" ColumnName="Date_Interv" DataSourceName="GMAO.dbo.Intervention" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@DAT2" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Date_Interv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GMAOConnectionString (MySettings)" DbObjectName="GMAO.dbo.Intervention" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill_TBF" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData_TBF" GeneratorSourceName="Fill_TBF" GetMethodModifier="Public" GetMethodName="GetData_TBF" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData_TBF" UserSourceName="Fill_TBF">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) AS NBR, Code_Machine, (SUM(DT_M) / 60) / COUNT(*) AS MDT_M, (SUM(UT_M) / 60) / COUNT(*) AS MUT_M, (SUM(TTR_M) / 60) / COUNT(*) AS MTTR_M, (SUM(TBF_M) / 60) / COUNT(*) AS MTBF_M, Type
+FROM     Intervention
+WHERE  (Date_Interv BETWEEN @DAT1 AND @DAT2)
+GROUP BY Code_Machine, Type
+HAVING (Type = 'corrective')
+ORDER BY SUM(TBF_M) / COUNT(*) DESC</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DAT1" ColumnName="Date_Interv" DataSourceName="GMAO.dbo.Intervention" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@DAT1" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Date_Interv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="DAT2" ColumnName="Date_Interv" DataSourceName="GMAO.dbo.Intervention" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@DAT2" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Date_Interv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GMAOConnectionString (MySettings)" DbObjectName="GMAO.dbo.Intervention" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill_TTR" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData_TTR" GeneratorSourceName="Fill_TTR" GetMethodModifier="Public" GetMethodName="GetData_TTR" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData_TTR" UserSourceName="Fill_TTR">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) AS NBR, Code_Machine, (SUM(DT_M) / 60) / COUNT(*) AS MDT_M, (SUM(UT_M) / 60) / COUNT(*) AS MUT_M, (SUM(TTR_M) / 60) / COUNT(*) AS MTTR_M, (SUM(TBF_M) / 60) / COUNT(*) AS MTBF_M, Type
+FROM     Intervention
+WHERE  (Date_Interv BETWEEN @DAT1 AND @DAT2)
+GROUP BY Code_Machine, Type
+HAVING (Type = 'corrective')
+ORDER BY SUM(TTR_M) / COUNT(*)  DESC</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DAT1" ColumnName="Date_Interv" DataSourceName="GMAO.dbo.Intervention" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@DAT1" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Date_Interv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="DAT2" ColumnName="Date_Interv" DataSourceName="GMAO.dbo.Intervention" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@DAT2" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Date_Interv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="GMAOConnectionString (MySettings)" DbObjectName="GMAO.dbo.Intervention" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill_UT" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData_UT" GeneratorSourceName="Fill_UT" GetMethodModifier="Public" GetMethodName="GetData_UT" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData_UT" UserSourceName="Fill_UT">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) AS NBR, Code_Machine, (SUM(DT_M) / 60) / COUNT(*) AS MDT_M, (SUM(UT_M) / 60) / COUNT(*) AS MUT_M, (SUM(TTR_M) / 60) / COUNT(*) AS MTTR_M, (SUM(TBF_M) / 60) / COUNT(*) AS MTBF_M, Type
+FROM     Intervention
+WHERE  (Date_Interv BETWEEN @DAT1 AND @DAT2)
+GROUP BY Code_Machine, Type
+HAVING (Type = 'corrective')
+ORDER BY SUM(UT_M) / COUNT(*) DESC</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="DAT1" ColumnName="Date_Interv" DataSourceName="GMAO.dbo.Intervention" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@DAT1" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Date_Interv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="DAT2" ColumnName="Date_Interv" DataSourceName="GMAO.dbo.Intervention" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="@DAT2" Precision="0" ProviderType="DateTime" Scale="0" Size="8" SourceColumn="Date_Interv" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GMAODataSet_VUE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="GMAODataSet_VUE" msprop:Generator_UserDSName="GMAODataSet_VUE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vue_preventive" msprop:Generator_TableClassName="vue_preventiveDataTable" msprop:Generator_TableVarName="tablevue_preventive" msprop:Generator_RowChangedName="vue_preventiveRowChanged" msprop:Generator_TablePropName="vue_preventive" msprop:Generator_RowDeletingName="vue_preventiveRowDeleting" msprop:Generator_RowChangingName="vue_preventiveRowChanging" msprop:Generator_RowEvHandlerName="vue_preventiveRowChangeEventHandler" msprop:Generator_RowDeletedName="vue_preventiveRowDeleted" msprop:Generator_RowClassName="vue_preventiveRow" msprop:Generator_UserTableName="vue_preventive" msprop:Generator_RowEvArgName="vue_preventiveRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="N_intervention" msprop:Generator_ColumnVarNameInTable="columnN_intervention" msprop:Generator_ColumnPropNameInRow="N_intervention" msprop:Generator_ColumnPropNameInTable="N_interventionColumn" msprop:Generator_UserColumnName="N_intervention" type="xs:int" minOccurs="0" />
+              <xs:element name="Duree" msprop:Generator_ColumnVarNameInTable="columnDuree" msprop:Generator_ColumnPropNameInRow="Duree" msprop:Generator_ColumnPropNameInTable="DureeColumn" msprop:Generator_UserColumnName="Duree" type="xs:int" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Intervention" msprop:Generator_ColumnVarNameInTable="columnIntervention" msprop:Generator_ColumnPropNameInRow="Intervention" msprop:Generator_ColumnPropNameInTable="InterventionColumn" msprop:Generator_UserColumnName="Intervention" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Observation" msprop:Generator_ColumnVarNameInTable="columnObservation" msprop:Generator_ColumnPropNameInRow="Observation" msprop:Generator_ColumnPropNameInTable="ObservationColumn" msprop:Generator_UserColumnName="Observation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Validation" msprop:Generator_ColumnVarNameInTable="columnValidation" msprop:Generator_ColumnPropNameInRow="Validation" msprop:Generator_ColumnPropNameInTable="ValidationColumn" msprop:Generator_UserColumnName="Validation" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Code_Machine" msprop:Generator_ColumnVarNameInTable="columnCode_Machine" msprop:Generator_ColumnPropNameInRow="Code_Machine" msprop:Generator_ColumnPropNameInTable="Code_MachineColumn" msprop:Generator_UserColumnName="Code_Machine" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Code_Interv" msprop:Generator_ColumnVarNameInTable="columnCode_Interv" msprop:Generator_ColumnPropNameInRow="Code_Interv" msprop:Generator_ColumnPropNameInTable="Code_IntervColumn" msprop:Generator_UserColumnName="Code_Interv" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date_DInterv" msprop:Generator_ColumnVarNameInTable="columnDate_DInterv" msprop:Generator_ColumnPropNameInRow="Date_DInterv" msprop:Generator_ColumnPropNameInTable="Date_DIntervColumn" msprop:Generator_UserColumnName="Date_DInterv" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Type_Frequence" msprop:Generator_ColumnVarNameInTable="columnType_Frequence" msprop:Generator_ColumnPropNameInRow="Type_Frequence" msprop:Generator_ColumnPropNameInTable="Type_FrequenceColumn" msprop:Generator_UserColumnName="Type_Frequence" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Freq" msprop:Generator_ColumnVarNameInTable="columnFreq" msprop:Generator_ColumnPropNameInRow="Freq" msprop:Generator_ColumnPropNameInTable="FreqColumn" msprop:Generator_UserColumnName="Freq" type="xs:int" minOccurs="0" />
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date_PInterv" msprop:Generator_ColumnVarNameInTable="columnDate_PInterv" msprop:Generator_ColumnPropNameInRow="Date_PInterv" msprop:Generator_ColumnPropNameInTable="Date_PIntervColumn" msprop:Generator_UserColumnName="Date_PInterv" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VUE_TOP10" msprop:Generator_TableClassName="VUE_TOP10DataTable" msprop:Generator_TableVarName="tableVUE_TOP10" msprop:Generator_RowChangedName="VUE_TOP10RowChanged" msprop:Generator_TablePropName="VUE_TOP10" msprop:Generator_RowDeletingName="VUE_TOP10RowDeleting" msprop:Generator_RowChangingName="VUE_TOP10RowChanging" msprop:Generator_RowEvHandlerName="VUE_TOP10RowChangeEventHandler" msprop:Generator_RowDeletedName="VUE_TOP10RowDeleted" msprop:Generator_RowClassName="VUE_TOP10Row" msprop:Generator_UserTableName="VUE_TOP10" msprop:Generator_RowEvArgName="VUE_TOP10RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:int" minOccurs="0" />
+              <xs:element name="Code_Machine" msprop:Generator_ColumnVarNameInTable="columnCode_Machine" msprop:Generator_ColumnPropNameInRow="Code_Machine" msprop:Generator_ColumnPropNameInTable="Code_MachineColumn" msprop:Generator_UserColumnName="Code_Machine" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VUE_TTR_MACHINE" msprop:Generator_TableClassName="VUE_TTR_MACHINEDataTable" msprop:Generator_TableVarName="tableVUE_TTR_MACHINE" msprop:Generator_TablePropName="VUE_TTR_MACHINE" msprop:Generator_RowDeletingName="VUE_TTR_MACHINERowDeleting" msprop:Generator_RowChangingName="VUE_TTR_MACHINERowChanging" msprop:Generator_RowEvHandlerName="VUE_TTR_MACHINERowChangeEventHandler" msprop:Generator_RowDeletedName="VUE_TTR_MACHINERowDeleted" msprop:Generator_UserTableName="VUE_TTR_MACHINE" msprop:Generator_RowChangedName="VUE_TTR_MACHINERowChanged" msprop:Generator_RowEvArgName="VUE_TTR_MACHINERowChangeEvent" msprop:Generator_RowClassName="VUE_TTR_MACHINERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code_Machine" msprop:Generator_ColumnVarNameInTable="columnCode_Machine" msprop:Generator_ColumnPropNameInRow="Code_Machine" msprop:Generator_ColumnPropNameInTable="Code_MachineColumn" msprop:Generator_UserColumnName="Code_Machine" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TTR_M" msprop:Generator_ColumnVarNameInTable="columnTTR_M" msprop:Generator_ColumnPropNameInRow="TTR_M" msprop:Generator_ColumnPropNameInTable="TTR_MColumn" msprop:Generator_UserColumnName="TTR_M" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TTR_D" msprop:Generator_ColumnVarNameInTable="columnTTR_D" msprop:Generator_ColumnPropNameInRow="TTR_D" msprop:Generator_ColumnPropNameInTable="TTR_DColumn" msprop:Generator_UserColumnName="TTR_D" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date_Interv" msprop:Generator_ColumnVarNameInTable="columnDate_Interv" msprop:Generator_ColumnPropNameInRow="Date_Interv" msprop:Generator_ColumnPropNameInTable="Date_IntervColumn" msprop:Generator_UserColumnName="Date_Interv" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VUE_TTR_ALL" msprop:Generator_TableClassName="VUE_TTR_ALLDataTable" msprop:Generator_TableVarName="tableVUE_TTR_ALL" msprop:Generator_TablePropName="VUE_TTR_ALL" msprop:Generator_RowDeletingName="VUE_TTR_ALLRowDeleting" msprop:Generator_RowChangingName="VUE_TTR_ALLRowChanging" msprop:Generator_RowEvHandlerName="VUE_TTR_ALLRowChangeEventHandler" msprop:Generator_RowDeletedName="VUE_TTR_ALLRowDeleted" msprop:Generator_UserTableName="VUE_TTR_ALL" msprop:Generator_RowChangedName="VUE_TTR_ALLRowChanged" msprop:Generator_RowEvArgName="VUE_TTR_ALLRowChangeEvent" msprop:Generator_RowClassName="VUE_TTR_ALLRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NBR" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNBR" msprop:Generator_ColumnPropNameInRow="NBR" msprop:Generator_ColumnPropNameInTable="NBRColumn" msprop:Generator_UserColumnName="NBR" type="xs:int" minOccurs="0" />
+              <xs:element name="Code_Machine" msprop:Generator_ColumnVarNameInTable="columnCode_Machine" msprop:Generator_ColumnPropNameInRow="Code_Machine" msprop:Generator_ColumnPropNameInTable="Code_MachineColumn" msprop:Generator_UserColumnName="Code_Machine" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MDT_M" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMDT_M" msprop:Generator_ColumnPropNameInRow="MDT_M" msprop:Generator_ColumnPropNameInTable="MDT_MColumn" msprop:Generator_UserColumnName="MDT_M" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MUT_M" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMUT_M" msprop:Generator_ColumnPropNameInRow="MUT_M" msprop:Generator_ColumnPropNameInTable="MUT_MColumn" msprop:Generator_UserColumnName="MUT_M" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MTTR_M" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMTTR_M" msprop:Generator_ColumnPropNameInRow="MTTR_M" msprop:Generator_ColumnPropNameInTable="MTTR_MColumn" msprop:Generator_UserColumnName="MTTR_M" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MTBF_M" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMTBF_M" msprop:Generator_ColumnPropNameInRow="MTBF_M" msprop:Generator_ColumnPropNameInTable="MTBF_MColumn" msprop:Generator_UserColumnName="MTBF_M" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

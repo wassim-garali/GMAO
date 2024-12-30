@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotation</title>
+    <style>
+        /* Définit un carré qui tourne */
+        .box2 {
+            border-bottom: 75px solid red;
+            border-left: 75px solid transparent;
+            border-right: 75px solid white;
+            width: 0;
+            height:0;
+
+
+            animation-name: rotation; /* nom */
+            animation-duration: 0.5s; /* duree de 2s */
+             /* 1s avant le debut */
+            animation-iteration-count: infinite; /* repetition infinie */
+			
+
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg); /* Départ sans rotation */
+            }
+            to {
+                transform: rotate(360deg); /* Terminé avec une rotation complète */
+            }
+        }
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background: yellowgreen;
+            margin-top: 50px;
+            margin-left: 50px;
+            animation-name: zoom; /* Nom de l'animation utilisée */
+            animation-duration: 1s; /* L'animation dure 1,5 seconde */
+            animation-iteration-count: infinite; /* Répète l'animation en boucle */
+            animation-direction: alternate; /* Alterne entre sens normal et inversé */
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(1); /* Taille normale */
+            }
+            to {
+                transform: scale(1.5); /* Agrandissement */
+            }
+        }
+        .box4 {
+      width: 100px;
+      height: 100px;
+      background: yellow;
+      animation-name: moveAndChangeColor;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      
+  }
+
+  @keyframes moveAndChangeColor {
+      0% {
+          background: yellow;
+          transform: translateX(0);
+      }
+      25% {
+          background: red;
+          transform: translateX(150px);
+      }
+      50% {
+          background: blue;
+          transform: translate(150px,150px);
+      }
+      75% {
+          background: green;
+          transform: translateY(150px);
+      }
+      100% {
+          background: yellow;
+          transform: translateX(0);
+      }
+    }
+      .image-zoom {
+            margin-left: 50px;
+            margin-top: 50px;
+            width: 150px; /* Largeur initiale de l'image */
+            height: 150px; /* Hauteur initiale de l'image */
+            background-image: url('adem/coeur.jpeg'); /* Chemin de l'image */
+            background-size: cover; /* Adapte l'image à la taille de l'élément */
+            background-position: center; /* Centre l'image */
+            animation: zoom 3s infinite alternate; /* Animation de zoom */
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(1); /* Taille normale */
+            }
+            to {
+                transform: scale(1.2); /* Zoom 20% plus grand */
+            }
+        }
+  
+    </style>
+</head>
+<body>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="image-zoom"></div>
+
+</body>
+</html>
